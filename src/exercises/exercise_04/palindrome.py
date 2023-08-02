@@ -6,19 +6,19 @@ same backwards and forwards). The program must ask the user for a word and infor
 whether or not it is a palindrome.
 '''
 
-class PalindromeChecker:
-  def is_palindrome(word):
-    word = word.lower().replace(' ', '')
+class Palindrome :
+  def is_palindrome(self, word) :
+    word = word.lower().replace(" ", "")
     return word == word[::-1]
 
-  def check_and_display(self, word):
+  def check_and_display(self, word) :
     if self.is_palindrome(word):
       return f'{word} is a palindrome!'
     else:
       return f'{word} is not a palindrome.'
 
 def main() :
-  palindrome_checker = PalindromeChecker()
+  palindrome_checker = Palindrome()
   user_input = input('Enter a word: ')
   result = palindrome_checker.check_and_display(user_input)
   print(result)
