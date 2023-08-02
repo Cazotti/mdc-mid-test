@@ -1,10 +1,10 @@
 import unittest
 
-from prime_numbers import PrimeNumberGenerator
+from prime_numbers import PrimeNumber
 
-class TestPrimeNumberGenerator(unittest.TestCase):
+class TestPrimeNumber(unittest.TestCase):
   def setUp(self):
-    self.prime_generator = PrimeNumberGenerator()
+    self.prime_generator = PrimeNumber()
 
   def test_is_prime(self):
     self.assertFalse(self.prime_generator.is_prime(0))
