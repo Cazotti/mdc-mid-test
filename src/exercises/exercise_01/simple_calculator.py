@@ -38,6 +38,3 @@ def main():
     print('Error: Invalid input. Please enter valid numbers.')
   except Exception as err :
     print(err.args[0])
-
-main()
-
