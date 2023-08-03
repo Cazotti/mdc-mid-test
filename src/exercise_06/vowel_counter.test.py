@@ -1,4 +1,5 @@
 import unittest
+
 from vowel_counter import VowelCounter
 
 class TestVowelCounter(unittest.TestCase):

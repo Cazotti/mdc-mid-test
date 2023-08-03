@@ -1,6 +1,7 @@
 from io import StringIO
 from interest_calculation import InterestCalculation
 from unittest.mock import patch
+
 import sys
 import unittest
 
