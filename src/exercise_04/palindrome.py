@@ -12,10 +12,7 @@ class Palindrome :
     return word == word[::-1]
 
   def check_and_display(self, word) :
-    if self.is_palindrome(word):
-      return f'{word} is a palindrome!'
-    else:
-      return f'{word} is not a palindrome.'
+    return f'{word} is a palindrome!' if self.is_palindrome(word) else f'{word} is not a palindrome.'
 
 def main() :
   palindrome_checker = Palindrome()
