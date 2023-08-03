@@ -20,14 +20,14 @@ class PrimeNumber :
       i += 6
     return True
 
-  def get_first_n_primes(self, n) :
-    count = 0
-    num = 2
+  def get_first_n_primes(self, n):
+    if n <= 0: return []
+
     n_primes = []
-    while count < n :
-      if self.is_prime(num) :
+    num = 2
+    while len(n_primes) < n:
+      if self.is_prime(num):
         n_primes.append(num)
-        count += 1
       num += 1
     return n_primes
 
