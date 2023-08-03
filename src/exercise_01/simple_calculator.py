@@ -12,17 +12,18 @@ class SimpleCalculator:
     self.operator = operator
 
   def calculate(self):
-    if self.operator == '+':
-      return self.num1 + self.num2
-    elif self.operator == '-':
-      return self.num1 - self.num2
-    elif self.operator == '*':
-      return self.num1 * self.num2
-    elif self.operator == '/':
-      if self.num2 != 0:
-        return self.num1 / self.num2
-      else:
+    operators = {
+      '+': lambda x, y: x + y,
+      '-': lambda x, y: x - y,
+      '*': lambda x, y: x * y,
+      '/': lambda x, y: x / y if y != 0 else None
+    }
+
+    if self.operator in operators:
+      result = operators[self.operator](self.num1, self.num2)
+      if result is None:
         raise Exception('Error: Division by zero is not allowed.')
+      return result
     else:
       raise Exception('Error: Invalid operator.')
 
