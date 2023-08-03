@@ -1,9 +1,9 @@
-"""
+'''
 Exercise 2: Prime Numbers
 
 Write a function that checks whether a number is prime or not. Then create a program that
 prints the first 10 prime numbers.
-"""
+'''
 
 class PrimeNumber :
   def is_prime(self, number):

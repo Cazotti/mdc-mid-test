@@ -8,7 +8,7 @@ whether or not it is a palindrome.
 
 class Palindrome :
   def is_palindrome(self, word) :
-    word = word.lower().replace(" ", "")
+    word = word.lower().replace(' ', '')
     return word == word[::-1]
 
   def check_and_display(self, word) :

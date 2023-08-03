@@ -1,9 +1,9 @@
-"""
+'''
 Exercise 3: Factorial
 
 Write a function to calculate the factorial of a number. Next, create a program that allows the
 user to enter a number and displays the corresponding factorial.
-"""
+'''
 
 class Factorial :
   def calculate_factorial(self, n) :

@@ -14,15 +14,15 @@ class TestFactorialCalculator(unittest.TestCase) :
 
   def test_calculate_and_display_positive(self) :
     result = self.factorial_calculator.calculate_and_display(5)
-    self.assertEqual(result, "The factorial of 5 is 120")
+    self.assertEqual(result, 'The factorial of 5 is 120')
 
   def test_calculate_and_display_negative(self) :
     result = self.factorial_calculator.calculate_and_display(-5)
-    self.assertEqual(result, "Factorial is not defined for negative numbers.")
+    self.assertEqual(result, 'Factorial is not defined for negative numbers.')
 
   def test_calculate_and_display_invalid_input(self) :
-    result = self.factorial_calculator.calculate_and_display("abc")
-    self.assertEqual(result, "Error: Invalid input. Please enter a valid number.")
+    result = self.factorial_calculator.calculate_and_display('abc')
+    self.assertEqual(result, 'Error: Invalid input. Please enter a valid number.')
 
 if __name__ == '__main__' :
   unittest.main()

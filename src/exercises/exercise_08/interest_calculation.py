@@ -6,11 +6,10 @@ interest rate, and investment time (in months). The program must prompt the user
 values and display the final value.
 '''
 
-class InvestmentCalculator:
+class InterestCalculation:
   @staticmethod
   def calculate_final_value(initial_capital, interest_rate, months):
-    final_value = initial_capital * (1 + (interest_rate / 100)) ** months
-    return final_value
+    return initial_capital * (1 + (interest_rate / 100)) ** months
 
   def calculate_and_display_final_value(self):
     try:
